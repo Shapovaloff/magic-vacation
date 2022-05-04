@@ -27,3 +27,28 @@
     transition: all 0.7s ease .6s;
   }
 }
+
+.page {
+  &--loaded {
+    .page-header__logo {
+      opacity: 1;
+      transform: translateX(0);
+      transition-property: transform, opacity;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .page-header__menu {
+      opacity: 1;
+      transition: opacity 0.5s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .screen__footer {
+      opacity: 1;
+      transform: translateY(0);
+      transition-property: transform, opacity;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
