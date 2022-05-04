@@ -24,7 +24,6 @@ export default class TypographyBuild {
   }
 
   shuffleIndex(index) {
-    console.log(index)
     if (index % 3 === 1) {
       return index - 1;
     }
