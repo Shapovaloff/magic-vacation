@@ -2,7 +2,7 @@
   0%,
   30% {
     opacity: 0;
-    transform: translate(5rem);
+    transform: translateX(5rem);
   }
 
   100% {
@@ -29,6 +29,7 @@
   }
 }
 
+
 @keyframes rulesLink {
   0% {
     width: 6rem;
@@ -49,10 +50,17 @@
 
 .screen {
   &.active {
-    .intro__message {
-        opacity: 1;
-        transform: translateY(0);
+    .intro__title.active .intro__word>span,
+    .intro__date.active .intro__date-word>span {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
+
+    .intro__message {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .form__field {
       width: calc(100% - 21rem);
       transition: width 0.7s ease;
@@ -144,7 +152,7 @@
   bottom: 0;
   transition: all 1s ease;
 
-  .screen--story.transitioning ~ & {
+  .screen--story.transitioning~& {
     height: 100%;
     z-index: 1;
   }
