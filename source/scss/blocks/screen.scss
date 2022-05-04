@@ -7,7 +7,7 @@
   overflow: hidden;
 
   &--hidden {
-    display: none;
+    visibility: hidden;
   }
 
   @media (max-width: $tablet) and (orientation: portrait) {
@@ -304,10 +304,10 @@
 
 .screen--prizes {
   background-color: $c-dark;
+  position: relative;
 }
 
 .screen--game {
-  position: relative;
   background-color: $c-dark;
 
   &::before {
