@@ -61,7 +61,7 @@ export default class TypographyBuild {
       }
       // Handle space letter
       if (letter === ` `) {
-        // Append word to parent
+        // Apend word to parent
         wordFragment.appendChild(document.createTextNode(`\u00A0`));
         wordContainer.appendChild(wordFragment);
         parentFragment.appendChild(wordContainer);
