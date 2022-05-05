@@ -14,4 +14,5 @@ export default () => {
   setTimeout(() => {
     animationTopScreenTextLine.runAnimation();
   }, 500);
+
 };
